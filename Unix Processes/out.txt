@@ -1,1 +1,88 @@
+Script started on Mon 24 Jul 2023 08:45:22 PM PDT
+]0;dkcomp341139@cs2:~[?1034h[dkcomp341139@cs2 ~]$ ./a.out textFile.txt
+     1	This is line one in my text file.
 
+     2	This is line two in my text file.
+
+     3	This is line three in my text file.
+
+     4	Linux provides many commands for manipulating text!
+
+Child Completes 
+In the Parent Process
+Child Id = 27360, Parent ID = 27343
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ sleep 100 &
+[1] 27362
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ sleep 1
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ bg 1
+bash: bg: job 1 already in background
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ fg 1
+sleep 100
+^Z
+[1]+  Stopped                 sleep 100
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ ps
+  PID TTY          TIME CMD
+27343 pts/10   00:00:00 bash
+27362 pts/10   00:00:00 sleep
+27364 pts/10   00:00:00 ps
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ kill 27362
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ ps
+  PID TTY          TIME CMD
+27343 pts/10   00:00:00 bash
+27362 pts/10   00:00:00 sleep
+27365 pts/10   00:00:00 ps
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ kill 27362
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ ps
+  PID TTY          TIME CMD
+27343 pts/10   00:00:00 bash
+27362 pts/10   00:00:00 sleep
+27368 pts/10   00:00:00 ps
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ exit
+exit
+There are stopped jobs.
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ script out.txt
+Script started, file is out.txt
+]0;dkcomp341139@cs2:~[?1034h[dkcomp341139@cs2 ~]$ exit./a/out. textFile.txtexit[K[2Ppsexit./a/out. textFile.txt
+bash: ./a/out.: No such file or directory
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ ./a/out. textFile.txtexit[K
+exit
+Script done, file is out.txt
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ s[Kscript out.txtexit[Kscript out.txt
+Script started, file is out.txt
+]0;dkcomp341139@cs2:~[?1034h[dkcomp341139@cs2 ~]$ exit./a/out. textFile.txtexit[K./a/out. textFile.txtexit[K./a/out. textFile.txtexit[K./a/out. textFile.txtexit[K[Kexit./a/out. textFile.txtexit[K./a/out. textFile.txtexit[K[2Ppskill 27280ps[Kbg 1f[C[C[Cb[C[C[C[3@sleep[C[C20 &[7Pbg 1f[C[C[Cb[C[C[C[3@sleep[C[C20 &ps[Kkill 1[1Pps -fbg %1sleep 10 &[1P%[4Pbg %1kill -9 27128[3P27128[1P170[4Pps -fkill 27224ps[Kfg %1sleep 10 &[5Pfg %1[3Ppsbg %1sleep 10 &ps[K./a.out textFile.txt[11Pexit exit[5Pjobsbg %1[1Pjobsexit exit./a.out textFile.txt
+     1	This is line one in my text file.
+
+     2	This is line two in my text file.
+
+     3	This is line three in my text file.
+
+     4	Linux provides many commands for manipulating text!
+
+Child Completes 
+In the Parent Process
+Child Id = 27413, Parent ID = 27394
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ sleep 120 %[K$[K&
+[1] 27415
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ sleep 1
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ bg 1
+bash: bg: job 1 already in background
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ fg 1
+sleep 120
+^Z
+[1]+  Stopped                 sleep 120
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ bg 1
+[1]+ sleep 120 &
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ ps
+  PID TTY          TIME CMD
+27394 pts/11   00:00:00 bash
+27415 pts/11   00:00:00 sleep
+27417 pts/11   00:00:00 ps
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ kill 27415
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ ps
+  PID TTY          TIME CMD
+27394 pts/11   00:00:00 bash
+27418 pts/11   00:00:00 ps
+[1]+  Terminated              sleep 120
+]0;dkcomp341139@cs2:~[dkcomp341139@cs2 ~]$ exit
+exit
+Script done, file is out.tx
