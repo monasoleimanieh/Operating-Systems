@@ -1,0 +1,14 @@
+Instructions:
+
+In this assignment, you will write a Java program that implements a solution to the bounded buffer problem between a producer and a consumer. Requirements are:
+
+The producer will produce forever and the consumer will consume forever.
+
+The producer will put data into a shared buffer and the consumer will remove data from the shared buffer. The shared buffer should have a declared size of 5.
+
+The buffer must implement a means of ensuring that the buffer never enters an underflow state (i.e., takes too much data out) or an overflow state (i.e., puts too much data into the buffer).
+
+The shared buffer must include functionality so that a critical region problem does not occur with parallel updates to the data.
+
+Test your application by creating a java thread for the producer and a java thread for the consumer. The producer and consumer share a common buffer.
+
