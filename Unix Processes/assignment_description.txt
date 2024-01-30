@@ -1,0 +1,10 @@
+Problem:
+exec()- The exec() family of functions replaces the current process image with a new process image.
+fork()- fork is an operation whereby a process creates a copy of itself
+wait()- The wait() system call suspends execution of the current process until one of its children terminates.
+exit()- The function _exit() terminates the calling process "immediately". Any open file descriptors belonging to the process are closed;
+kill()- The kill() system call can be used to send any signal to any process group or process.
+
+Instruction:
+Get onto the TRU Linux machine and run the system calls, fork(), wait() and exec()
+Write a program named as “testOS.c” that executes the “cat –b –v –t filename” command in the child process
