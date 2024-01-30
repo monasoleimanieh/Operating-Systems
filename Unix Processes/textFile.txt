@@ -1,0 +1,7 @@
+This is line one in my text file.
+
+This is line two in my text file.
+
+This is line three in my text file.
+
+Linux provides many commands for manipulating text!
